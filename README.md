@@ -1,6 +1,6 @@
 # mis
-管理信息系统作业</br>
-建表</br>
+## 管理信息系统作业</br>
+### 建表</br>
 DROP TABLE IF EXISTS `保养记录`;</br>
 CREATE TABLE `保养记录` (</br>
   `记录ID` int(11) NOT NULL AUTO_INCREMENT,</br>
