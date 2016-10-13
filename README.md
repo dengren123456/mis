@@ -80,5 +80,3 @@ CREATE TABLE `消耗记录` (</br>
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;</br>
 INSERT INTO `消耗记录` VALUES ('1', '更换端子', '端子', '1', '10', '1');</br>
 <p></p>
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
