@@ -80,4 +80,31 @@ CREATE TABLE `消耗记录` (</br>
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;</br>
 INSERT INTO `消耗记录` VALUES ('1', '更换端子', '端子', '1', '10', '1');</br>
 <p></p>
+### 查询</br>
+use 电气设备保养;</br>
+select 设备.设备ID,类别.设备类别,类别.保养类别,保养记录.保养时间,保养记录.说明,</br>
+保养人信息.保养人,保养人信息.班组,检修项目.保养内容,检修项目.保养情况,检修项目.备注,</br>
+消耗记录.修理内容,消耗记录.消耗材料,消耗记录.消耗数量,消耗记录.剩余数量</br>
+from 设备</br>
+left join 类别</br>
+on 设备.FF类型ID=类别.类别ID</br>
+left join 保养记录</br>
+on 设备.F记录ID=保养记录.记录ID</br>
+left join 保养人信息</br>
+on 保养记录.F保养人ID=保养人信息.保养人ID</br>
+left join 检修项目</br>
+on 类别.类别ID=检修项目.F类别ID</br>
+left join 消耗记录</br>
+on 检修项目.检修项目ID=消耗记录.F检修项目ID</br>
+where 设备ID="000001"</br>
+![查询设备信息](http://a.hiphotos.baidu.com/image/pic/item/14ce36d3d539b6009a428951e150352ac75cb74c.jpg)
+<p></p>
+select 设备.设备ID,设备.最近一次保养时间, 类别.保养类别</br>
+from 设备</br>
+left join 类别</br>
+on 设备.FF类型ID=类别.类别ID</br>
+where exists ( select 保养周期（天） from 类别,设备 where 设备.FF类型ID=类别.类别ID) - datediff( now(), (select 最近一次保养时间 from 设备 ) ) < 20</br>
+![设备预警](http://b.hiphotos.baidu.com/image/pic/item/8b82b9014a90f6033a861da13112b31bb051ed26.jpg)
+<p></p>
+### ER图</br>
 ![ER图](http://d.hiphotos.baidu.com/image/pic/item/6c224f4a20a446238aab20849022720e0df3d7f7.jpg)
