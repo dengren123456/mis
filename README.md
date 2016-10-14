@@ -108,3 +108,8 @@ where exists ( select 保养周期（天） from 类别,设备 where 设备.FF�
 <p></p>
 ### ER图</br>
 ![ER图](http://d.hiphotos.baidu.com/image/pic/item/6c224f4a20a446238aab20849022720e0df3d7f7.jpg)
+<p></p>
+### Axure原型链接</br>
+http://pan.baidu.com/s/1boLM6nH</br>
+### 数据库链接</br>
+http://pan.baidu.com/s/1eSfZmng</br>
