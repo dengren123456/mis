@@ -80,4 +80,4 @@ CREATE TABLE `消耗记录` (</br>
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;</br>
 INSERT INTO `消耗记录` VALUES ('1', '更换端子', '端子', '1', '10', '1');</br>
 <p></p>
-![ER图](https://share.weiyun.com/49a3ccaee9f50b59e76c664fbbb4be48)
+![ER图](http://image.baidu.com/detail/newindex?col=&tag=&pn=0&pid=37961620611&aid=405594145&user_id=1061913585&setid=-1&sort=0&newsPn=&star=&fr=&from=2)
