@@ -1,4 +1,4 @@
 # mis
 ##管理信息系统作业
 ###泳道图
-![泳道图](http://d.hiphotos.baidu.com/image/pic/item/aa64034f78f0f7366c3a55d30255b319eac4131f.jpg)
+![泳道图](http://g.hiphotos.baidu.com/image/pic/item/aec379310a55b319a57312a64ba98226cefc175e.jpg)
