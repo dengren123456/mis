@@ -1,0 +1,30 @@
+.image-nav{
+	height:100px;
+}
+.left-nav{
+	height:60px;
+}
+.red-btn{
+	background-color:#CD0000;
+	color:#FFFFFF;
+	font-weight: 900;
+	font-size:20px;
+}
+.r-border{
+    border: 2px solid #000000;
+    -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px; 
+    border-radius:15px; 
+}
+.right-border{
+	border-right:1px dashed #000; 
+	height:50px;
+	width:350px
+}
+a{
+	font-family:Times New Roman;
+	font-weight: 900;
+}
+hr{
+	weight:20px;
+}

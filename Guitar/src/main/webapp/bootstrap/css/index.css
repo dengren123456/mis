@@ -1,0 +1,23 @@
+.red-btn{
+	background-color:#CD0000;
+	color:#FFFFFF;
+	font-weight: 900;
+	font-size:30px;
+}
+.introduction{
+	font-family:Times New Roman;
+	color:#191970;
+	font-weight: 900;
+	font-size:34px;
+}
+.introduction-down{
+	font-family:Times New Roman;
+	color:#CD0000;
+	font-weight: 900;
+	font-size:30px;
+}
+.main-part{
+	height:50%;
+	weight:50%;
+}
+
