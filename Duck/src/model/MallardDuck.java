@@ -7,7 +7,7 @@ public class MallardDuck extends Duck {
 		   }
 	 
 	   public void display() {
-		   System.out.println("��ͷѼ");
+		   System.out.println("绿头鸭");
 	   }
 	 
 }

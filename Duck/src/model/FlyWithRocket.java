@@ -5,7 +5,7 @@ public  class FlyWithRocket implements FlyBehavior{
 	@Override
 	public void fly() {
 		// TODO Auto-generated method stub
-		System.out.println("ÎÒÓÃ»ğ¼ı·É£¬¼´ÅçÉä·É·¨");
+		System.out.println("æˆ‘ç”¨ç«ç®­é£ï¼Œå³å–·å°„é£æ³•");
 	}
 
 }

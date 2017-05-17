@@ -7,7 +7,7 @@ public class RubberDuck extends Duck{
 		   }
 	 
 	   public void display() {
-		   System.out.println("��Ѽ");
+		   System.out.println("橡胶鸭");
 	   }
 	 
 }

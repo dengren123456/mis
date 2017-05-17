@@ -5,7 +5,7 @@ public class FlyNoWay implements FlyBehavior{
 	@Override
 	public void fly() {
 		// TODO Auto-generated method stub
-		System.out.println("ÎÒ²»»á·É");
+		System.out.println("æˆ‘ä¸ä¼šé£");
 	}
 
 }

@@ -6,11 +6,11 @@ public class Duck {
 	   
 	   public void swim() {
 			// TODO Auto-generated method stub
-			System.out.println("»áÓÎÓ¾");
+			System.out.println("ä¼šæ¸¸æ³³");
 		}
 	   public void display() {
 			// TODO Auto-generated method stub
-			System.out.println("ÎÒµÄµÄÑÕÉ«");
+			System.out.println("æˆ‘çš„çš„é¢œè‰²");
 			
 		}
 	   public void performQuack() {

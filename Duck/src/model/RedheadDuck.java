@@ -7,6 +7,6 @@ public class RedheadDuck extends Duck{
 	   }
 
  public void display() {
-	   System.out.println("��ͷѼ");
+	   System.out.println("红头鸭");
  }
 }
