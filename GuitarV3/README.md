@@ -17,5 +17,5 @@
 ### mysql
 ![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/mysql.jpg)
 ### mysql测试
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/mysqltest.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/mysqltest.jpg)
 
