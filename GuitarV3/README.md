@@ -3,19 +3,19 @@
 ### sqlite查询
 ![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/search.jpg)
 ### sqlite添加
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/add.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/add.jpg)
 ### 添加前
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/add_before.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/add_before.jpg)
 ### 添加后
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/add_after.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/add_after.jpg)
 ### sqlite删除
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/delect.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/delect.jpg)
 ### 删除后
 ![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/delect_after.jpg)
 ### sqlite测试
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/sqlitetest.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/sqlitetest.jpg)
 ### mysql
-![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/mysql.jpg）
+![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/mysql.jpg)
 ### mysql测试
 ![Alt text](https://github.com/dengren123456/mis/blob/master/GuitarV3/images/mysqltest.jpg）
 
