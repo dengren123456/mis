@@ -50,7 +50,7 @@ public class LibraryTest {
 	 */
 	@Test
 	public void loan(){
-		this.addMember();
+		this.addMember(); 
 		this.addBook();
 		member1.Loan(book1);
 		member1.Loan(book2);
