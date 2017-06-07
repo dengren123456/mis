@@ -7,15 +7,18 @@ public class HasReachMaxSpecification implements ISpecification<Member> {
 	 * 用户最多只能借阅3本书
 	 * 
 	 */
-	@Override
 	public boolean isSatisfiedBy(Member member) {
+		boolean mm = false;
 		List<Loan> list = member.getLoans();
-		for(int i=0 ; i<list.size() ; i++){
-			if(list.get(i).getBook().getLoanTo()==null && list.size()<3){
-				return true;
+		if(list == null){
+			mm=true;
+		}else{
+			if(list.size()<3){
+				mm=true;
 			}
 		}
-		return false;
+		return mm;
+		
 	}
 
 }

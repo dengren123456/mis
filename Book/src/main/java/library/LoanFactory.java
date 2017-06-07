@@ -11,6 +11,7 @@ public class LoanFactory {
 		loan.menmber = member;
 		loan.loanDate = LocalDate.now();
 		loan.dateForReturn = LocalDate.now().plusDays(10);
+		book.setLoanTo(member);
 		return loan;
 	}
 }

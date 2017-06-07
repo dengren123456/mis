@@ -1,19 +1,20 @@
 package LibraryTest;
 
+import java.util.List;
+
 import org.junit.Test;
 
 import library.Book;
+import library.Loan;
 import library.Member;
 
 public class LibraryTest {
 	
 	private Book book1,book2,book3,book4;
-	private Member member1,member2,member3;
-	
+	private Member member1,member2,member3;	
 	/*
 	 * 添加用户
 	 */
-	@Test
 	public void addMember(){
 		member1 = new Member();
 		member1.setId("0001");
@@ -22,7 +23,6 @@ public class LibraryTest {
 	/*
 	 * 添加图书
 	 */
-	@Test
 	public void addBook(){
 		book1 = new Book();
 		book2 = new Book();
@@ -46,15 +46,41 @@ public class LibraryTest {
 		book4.setLoanTo(null);
 	}
 	/*
-	 * 借书
+	 * 借书成功
 	 */
 	@Test
-	public void loan(){
+	public void loanSuccess(){
 		this.addMember(); 
 		this.addBook();
 		member1.Loan(book1);
 		member1.Loan(book2);
-		System.out.println(member1.getName() + "成功借了" + member1.getLoans().get(0).getBook().gettItle() + "和" + member1.getLoans().get(1).getBook().gettItle());
+		member1.Loan(book3);
+		System.out.println("***********借书记录***************");
+		System.out.println("姓名：" + member1.getName());
+		System.out.println("书名：" + book1.gettItle() + "、" + book2.gettItle() + "、" + book3.gettItle());
+		System.out.println("借书时间：" + member1.getLoans().get(0).getLoanDate());
+		
 	}
-
+	/*
+	 * 借书失败
+	 */
+	@Test
+	public void loanFail(){
+		this.loanSuccess();
+		member1.Loan(book1);
+		if(member1.validate(book1)==false){
+			System.out.println("借书失败");
+		}
+	}
+	/*
+	 * 还书
+	 */
+	@Test
+	public void returnBook(){
+		this.loanSuccess();
+		member1.Return(book1);
+		System.out.println("***********还书记录***************");
+		System.out.println("姓名：" + member1.getName());
+		System.out.println("书名：" + book1.gettItle());
+	}
 }

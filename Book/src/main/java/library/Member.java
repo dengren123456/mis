@@ -54,7 +54,7 @@ public class Member {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public final Loan Loan(Book book){
 		Loan loan = null;
-		if(CanLoad(book)){
+		if(CanLoad(book) && validate(book)){
 			loan = LoanFactory.CreateLoan(book, this);
 			if(loans == null){
 				loans = new ArrayList();
@@ -64,5 +64,11 @@ public class Member {
 			}
 		}
 		return loan;
+	}
+	
+	public boolean validate(Book wantbook){
+		HasReachMaxSpecification hs = new HasReachMaxSpecification();
+		LoanOnlySpecification lo = new LoanOnlySpecification(wantbook);
+		return (hs.isSatisfiedBy(this) && lo.isSatisfiedBy(this));
 	}
 }

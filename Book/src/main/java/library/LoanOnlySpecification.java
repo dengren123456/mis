@@ -8,15 +8,23 @@ public class LoanOnlySpecification implements ISpecification<Member> {
 	 * 同一书只能借阅一本
 	 * 
 	 */
-	@Override
+	public LoanOnlySpecification(Book wantBook){
+		this.wantBook = wantBook;
+	}
 	public boolean isSatisfiedBy(Member member) {
+		boolean mm = false;
 		List<Loan> list = member.getLoans();
-		for(int i=0 ; i<list.size() ; i++){
-			if(list.get(i).getBook().getLoanTo()==null && list.get(i).getBook().getiSBN()!=wantBook.getiSBN()){
-				return true;
+		if(list == null){
+			mm=true;
+		}else{
+			for(Loan loan:list){
+				if(loan.getBook().getiSBN()!=wantBook.getiSBN()){
+					mm=true;
+				}
 			}
 		}
-		return false;
+		
+		return mm;
 	}
 	
 }
