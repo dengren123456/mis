@@ -15,7 +15,7 @@ public class LoanOnlySpecification implements ISpecification<Member> {
 		boolean mm = false;
 		List<Loan> list = member.getLoans();
 		if(list == null){
-			mm=true;
+			mm=true; 
 		}else{
 			for(Loan loan:list){
 				if(loan.getBook().getiSBN()!=wantBook.getiSBN()){
