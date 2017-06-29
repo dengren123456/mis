@@ -15,7 +15,6 @@
 ### 登陆
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/1.jpg)
 ### 课程查询
-![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/1.jpg)
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/2.jpg)
 ### 选课
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/3.jpg)
