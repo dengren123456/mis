@@ -7,7 +7,7 @@
 ### 系统模型图
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/Object-Picture.jpg)
 ### 数据库结构截图
-![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/Diagram 1.jpg)
+![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/Diagram%201.png)
 ### 顺序图
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/studentsequence.JPG)
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/professorsequence.JPG)
