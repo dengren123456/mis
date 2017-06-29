@@ -9,8 +9,8 @@
 ### 数据库结构截图
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/finalProject/picture/Diagram%201.png)
 ### 顺序图
-![Alt Text](https://github.com/dengren123456/mis/blob/master/finalProject/picture/studentsequence.JPG)
-![Alt Text](https://github.com/dengren123456/mis/blob/master/finalProject/picture/professorsequence.JPG)
+![Alt Text](https://github.com/dengren123456/mis/blob/master/finalProject/picture/student.jpg)
+![Alt Text](https://github.com/dengren123456/mis/blob/master/finalProject/picture/professor.jpg)
 ## 系统运行结果主要界面截图
 ### 登陆
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/finalProject/picture/1.jpg)
