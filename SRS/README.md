@@ -1,4 +1,4 @@
-# SRS 呕心沥血，鏖战两周，终于完成！ps(看完记得给个star)
+# SRS 呕心沥血，鏖战两周，终于完成！
 ## 系统分层结构图<br/>
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/12.jpg)
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/13.jpg)
@@ -35,6 +35,8 @@
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/17.jpg)
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/18.jpg)
 ![Alt Text](https://github.com/dengren123456/mis/blob/master/SRS/picture/19.jpg)
+
+### 如果觉得不错就点个Star吧！ヽ(￣▽￣)ﾉ
 
 
 
