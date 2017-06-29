@@ -1,0 +1,25 @@
+body {
+    background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498743000&di=3b275ba5f9c361a5706a9409042e8241&imgtype=jpg&er=1&src=http%3A%2F%2Fatt.x2.hiapk.com%2Fforum%2F201412%2F05%2F1752512zblwji8lw8l3892.jpg) #f8f6e9;
+}
+.mycenter{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width:500px;
+    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.mycenter mysign{
+    width: 440px;
+}
+.mycenter input,checkbox,button{
+    margin-top:2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.mycheckbox{
+    margin:5% 8% 5%;
+    height: 10px;
+}
