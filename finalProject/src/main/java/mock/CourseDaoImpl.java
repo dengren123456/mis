@@ -1,12 +1,8 @@
-package daoImpl.mock;
+package mock;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import dao.CourseDao;
 import model.Course;
-import model.CourseCatalog;
 
 public class CourseDaoImpl implements CourseDao {
 
@@ -30,10 +26,29 @@ public class CourseDaoImpl implements CourseDao {
 		return courses;
 	}
 
+
 	@Override
-	public HashMap<String, Course> findPrerequisite() {
+	public Course getByCourseNo(String CourseNo) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void addCourse(Course course) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateCourse(Course course) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteCourse(Course course) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

@@ -1,6 +1,7 @@
-package daoImpl.mock;
+package mock;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import dao.PersonDao;
@@ -24,7 +25,7 @@ public class PersonDaoImpl implements PersonDao {
 		p3 = new Professor("Snidely Whiplash", "987-65-4321", "Full Professor", "Physical Education");
 		professors.put(p3.getSsn(), p3);	
 		
-		//此处应该读取教授所教的课程
+		//锟剿达拷应锟矫讹拷取锟斤拷锟斤拷锟斤拷锟教的课筹拷
 		
 		
 		return professors;
@@ -36,10 +37,29 @@ public class PersonDaoImpl implements PersonDao {
 		return null;
 	}
 
+
 	@Override
-	public Student getLoginStuent(User user) {
+	public void addProfessor(String type, Professor professor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Professor> searchProfessor(Professor professor) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void updateProfessor(Professor professor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProfessor(Professor professor) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

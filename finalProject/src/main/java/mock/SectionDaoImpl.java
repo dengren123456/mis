@@ -1,4 +1,4 @@
-package daoImpl.mock;
+package mock;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,9 @@ import java.util.Map;
 
 import dao.SectionDao;
 import model.Course;
+import model.Professor;
 import model.Section;
+import model.User;
 
 public class SectionDaoImpl implements SectionDao{
 
@@ -15,7 +17,7 @@ public class SectionDaoImpl implements SectionDao{
 
 	@Override
 	public HashMap<String, Section> findBySemester(String semester) {
-		// ¸ù¾Ýsemester»ñÈ¡ÏàÓ¦µÄsectionÊý¾Ý,´Ë´¦Ö±½ÓÊÖ¶¯¸ø³ösectionÊý¾Ý
+		// ï¿½ï¿½ï¿½ï¿½semesterï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½ï¿½sectionï¿½ï¿½ï¿½ï¿½,ï¿½Ë´ï¿½Ö±ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½sectionï¿½ï¿½ï¿½ï¿½
 		HashMap<String, Section> sections = new HashMap<String, Section>();
 		Map<String, Course> allCourses = new CourseDaoImpl().findAll();
         
@@ -49,20 +51,33 @@ public class SectionDaoImpl implements SectionDao{
 		return sections;
 	}
 
+
 	@Override
-	public HashMap<String, Section> findAllsection() {
+	public HashMap<String, Section> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Section findselectsection(String semester, String select) {
+	public void addSection(Section section, Professor professor, String semester) {
 		// TODO Auto-generated method stub
-		return null;
+		
 	}
 
 	@Override
-	public HashMap<String, Section> findsection() {
+	public void deleteSection(String FullSectionNo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateSection(Section section) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public HashMap<String, Section> findByProfessor(User user) {
 		// TODO Auto-generated method stub
 		return null;
 	}
