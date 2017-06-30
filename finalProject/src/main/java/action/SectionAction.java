@@ -105,9 +105,9 @@ public class SectionAction extends ActionSupport {
 	    Section section = sections.get(sectionNo);
 	    Student student = personDao.findAllStudents().get(ssn);
 	    EnrollmentStatus status = section.enroll(student);
-	   PlanOfStudy planOfStudy = new PlanOfStudy(student);
+	    PlanOfStudy planOfStudy = new PlanOfStudy(student);
 	    boolean ss = planOfStudy.VerifyPlan(section);
-	   if(status.value().equals("Enrollment successful!") && ss==true){
+	    if(status.value().equals("Enrollment successful!") && ss==true){
 		   TranscriptEntry transcriptEntry = new TranscriptEntry(student, null, section);
 		   transcriptDao.addTranscript(transcriptEntry);
 		   SectionDaoImpl sectionDaoImpl = new SectionDaoImpl();
