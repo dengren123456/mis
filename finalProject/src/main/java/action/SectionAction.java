@@ -12,6 +12,7 @@ import dao.SectionDao;
 import dao.TranscriptDao;
 import model.Course;
 import model.EnrollmentStatus;
+import model.PlanOfStudy;
 import model.Professor;
 import model.Section;
 import model.Student;
@@ -104,18 +105,23 @@ public class SectionAction extends ActionSupport {
 		HashMap<String,Section> sections = sectionDao.findAll();
 	    Section section = sections.get(sectionNo);
 	    Student student = personDao.findAllStudents().get(ssn);
-	    EnrollmentStatus status = section.enroll(student);
 	    PlanOfStudy planOfStudy = new PlanOfStudy(student);
 	    boolean ss = planOfStudy.VerifyPlan(section);
-	    if(status.value().equals("Enrollment successful!") && ss==true){
-		   TranscriptEntry transcriptEntry = new TranscriptEntry(student, null, section);
-		   transcriptDao.addTranscript(transcriptEntry);
-		   SectionDaoImpl sectionDaoImpl = new SectionDaoImpl();
-		   sectionDaoImpl.updateSection(section);
-		   System.out.println("选课成功了！");
-	   }else{
-		   System.out.println(status.value());
-	   }
+	    if(ss==true){
+	    	EnrollmentStatus status = section.enroll(student);
+		    if(status.value().equals("Enrollment successful!")){
+			   TranscriptEntry transcriptEntry = new TranscriptEntry(student, null, section);
+			   transcriptDao.addTranscript(transcriptEntry);
+			   SectionDaoImpl sectionDaoImpl = new SectionDaoImpl();
+			   sectionDaoImpl.updateSection(section);
+			   System.out.println("选课成功了！");
+		   }else{
+			   System.out.println(status.value());
+		   }
+	    }else{
+	    	System.out.println("不是planOfStudy中的课程！");
+	    }
+	    
 	   return "jsonObject";
 	}
 	/**

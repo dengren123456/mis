@@ -22,6 +22,12 @@ public class PlanOfStudy {
 		courses = new ArrayList<Course>();
 	}
 	
+	
+	public ArrayList<Course> addPlanOfStudy(Course cou) {
+		courses.add(cou);
+		return courses;
+	}
+	
 	public Student getStudent() {
 		return student;
 	}
