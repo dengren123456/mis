@@ -25,7 +25,7 @@ public class PersonDaoImpl implements PersonDao {
 		p3 = new Professor("Snidely Whiplash", "987-65-4321", "Full Professor", "Physical Education");
 		professors.put(p3.getSsn(), p3);	
 		
-		//�˴�Ӧ�ö�ȡ�������̵Ŀγ�
+		
 		
 		
 		return professors;
