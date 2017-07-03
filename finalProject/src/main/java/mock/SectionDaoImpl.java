@@ -17,7 +17,6 @@ public class SectionDaoImpl implements SectionDao{
 
 	@Override
 	public HashMap<String, Section> findBySemester(String semester) {
-		// ����semester��ȡ��Ӧ��section����,�˴�ֱ���ֶ�����section����
 		HashMap<String, Section> sections = new HashMap<String, Section>();
 		Map<String, Course> allCourses = new CourseDaoImpl().findAll();
         
