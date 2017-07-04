@@ -173,7 +173,7 @@ public class TranscriptDaoImpl implements TranscriptDao {
 	@Override
 	public void deleteTranscript(String fullSectionNo) {
 		Connection Conn = DBUtil.getSqliteConnection();
-		String sql = "DELETE FROM Transcript WHERE name=? and sectionID=?  ";
+		String sql = "DELETE FROM Transcript WHERE fullSectionNo=?  ";
 		PreparedStatement stmt = null;
 		try {
 			stmt = Conn.prepareStatement(sql);
@@ -193,7 +193,7 @@ public class TranscriptDaoImpl implements TranscriptDao {
 	@Override
 	public void updateTranscript(String fullSectionNo, String ssn ,String grade) {
 		Connection Conn = DBUtil.getSqliteConnection();
-		String sql = "update Transcript set grade=? where  fullSectionNo=? StudentSsn=?";
+		String sql = "update Transcript set grade=? where  fullSectionNo=? and StudentSsn=?";
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = Conn.prepareStatement(sql);
